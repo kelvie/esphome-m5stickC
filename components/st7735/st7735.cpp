@@ -1,6 +1,7 @@
 #include "st7735.h"
 #include "esphome/core/log.h"
 #include "esphome/components/display/display_buffer.h"
+#include "esphome.h"
 
 namespace esphome {
 namespace st7735 {

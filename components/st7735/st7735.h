@@ -156,8 +156,10 @@ class ST7735 : public PollingComponent, public display::DisplayBuffer,
   int get_height_internal() override;
   int get_width_internal() override;
   size_t get_buffer_length_();
+  display::DisplayType get_display_type() override {
+    return display::DISPLAY_TYPE_COLOR;
+  }
 };
-
 
 }  // namespace st7735
 }  // namespace esphome
